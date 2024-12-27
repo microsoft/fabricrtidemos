@@ -1,6 +1,6 @@
 Fabric Real-time Grafana Demo
 
-This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. 
+This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. We will use VS Code with a Python script to generate the data, so you will need VS Code and Python installed on your client machine. 
 
 To start, open an Azure portal to create an Azure Managed Grafana instance. Type in Grafana and then select the 'Azure Managed Grafana' service:
 
@@ -121,6 +121,67 @@ Now open VS Code and then select ‘File’ -> ‘Open Folder’ and then naviga
 The event hub connection string can be found on the page below where we created the SAS key for the Event hub above. For the Event Hub name put in the name of the Event hub (not the name of the Event hub namespace).
 
 ![image](https://github.com/user-attachments/assets/d405406b-7749-4aba-8b7b-a3bc80367786)
+
+Once that is complete, run the script to start sending messages to the event hub that can be consumed by the Event Stream. The Event Stream will send the messages to the Server_Telemetry KQL database. Note you may need to do a pip install of the azure-eventhub library in your Python environment for the script to work. 
+
+Now go back to the Azure Managed Grafana instance in Azure created at the beginning. Click on the Endpoint to launch the Grafana interface. Login with your id:
+
+![image](https://github.com/user-attachments/assets/289cdb8f-ef74-411e-a92f-006b5aa0ee4a)
+
+Select to ‘Configure a new data source’
+
+![image](https://github.com/user-attachments/assets/ac831ec0-bc3a-46d5-963e-f9674b2c0bd8)
+
+Search for ‘data explorer’, then select Azure Data Explorer datasource. This is the same connector that will work with the Fabric KQL databases. On the configuration screen that pops up next, change the name to something like ‘Fabric-Server-Telemetry’ to easily identify the source. 
+
+![image](https://github.com/user-attachments/assets/60682681-b233-4a0a-8dc0-d86e53260b36
+
+Now back in Fabric in the KQL database, copy the ingestion URI as shown below. 
+
+![image](https://github.com/user-attachments/assets/e4c344dc-5863-4227-80fa-777cac10f246)
+
+Now paste it into the Default cluster URL. Set the authentication to use ‘Current User’ for this demo.
+
+![image](https://github.com/user-attachments/assets/85f4374c-4c64-4d48-a8b4-e6c7838e3ba0)
+
+Before saving the new source and testing it, first copy the name of your Azure Managed Grafana instance, which is the name of the managed identity, and add it as a contributor on your Fabric workspace. 
+
+![image](https://github.com/user-attachments/assets/9442d158-2c53-4c1a-abe5-866618303396)
+
+Once that is done, go back to your Grafana instance and ‘Save and Test’ the connection.
+Now click on ‘Dashboards’ on the left, then select ‘New -> Dashboard’.
+
+![image](https://github.com/user-attachments/assets/b49b366d-b864-4393-b354-bbaf7ecaf519)
+
+Select to add a new visualization
+
+![image](https://github.com/user-attachments/assets/499fae82-334c-40db-82e5-b532eb8018ff)
+
+Select the Fabric-Server-Telemetry connection:
+
+![image](https://github.com/user-attachments/assets/c47dd0c3-6e64-4a80-abb7-6e11d001e11d)
+
+![image](https://github.com/user-attachments/assets/09f98cd9-3d7d-4daf-afbc-c70db2b54d96)
+
+Note there is a bug in Grafana where sometimes it doesn’t show the graphical query builder correctly as shown below:
+
+![image](https://github.com/user-attachments/assets/08658088-51ac-4e2d-85fd-3f81eba3d5fc)
+
+If that happens, just hit ‘Apply’ on the top right of the screen to reset the builder. 
+
+![image](https://github.com/user-attachments/assets/835670a3-df5a-4b36-8653-3ec42ec359e2)
+
+Then select the menu on the top right corner of the blank visual and select ‘Edit’:
+
+![image](https://github.com/user-attachments/assets/9f65c7c9-1b0d-4a9c-b0cf-6739fcd865ab)
+
+Now in the query builder, select the ‘server_name, cpu_usage, and timestamp fields to include in the visual.
+
+![image](https://github.com/user-attachments/assets/82d90639-6d36-411c-bbce-cf696bc598a0)
+
+
+
+
 
 
 
