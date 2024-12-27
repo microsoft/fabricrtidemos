@@ -86,13 +86,44 @@ Now create a new Event Stream to process the data as shown below:
 
 ![image](https://github.com/user-attachments/assets/6aed5065-7a93-4678-923e-956a24cc94d5)
 
-Connect the source to the Event Hub that we created earlier by selecting ‘Azure Event Hubs’ from the New source section of the Event Stream.
+Connect the source to the Event Hub that we created earlier by selecting ‘Use External Source’ from the home screen of the Event Stream. Then select to connect to an 'Azure Event Hub':
 
-![image](https://github.com/user-attachments/assets/d83e1faf-cb76-493a-9b42-ea3eb4ffb270)
+![image](https://github.com/user-attachments/assets/2ed5294c-1bfc-4396-a2f4-49e4ecccf9cd)
 
-Add the connection details
+Select to add a new connection and then add the connection details for the Event Hub we created earlier. For the Shared Access Key Name and Key, reference the values we created above for the Event Hub SAS key.
 
 ![image](https://github.com/user-attachments/assets/91299630-c32b-4d7f-9d42-1b11bcc1a4e9)
+
+If you are asked for the consumer group put in '$Default', for the data format put in 'Json':
+
+![image](https://github.com/user-attachments/assets/e9ce335c-61b1-41ab-8fda-d18d269c9b80)
+
+Hit 'Next' and then add the new connection.
+
+![image](https://github.com/user-attachments/assets/b7429f81-3c88-492b-b6a1-85882d00ffc8)
+
+Now add the destination for the Eventhouse we created as shown below:
+
+![image](https://github.com/user-attachments/assets/bd94abd8-f4f3-42e8-be98-4223f24093c9)
+
+Setup the connection as shown below and select to save it when done:
+
+![image](https://github.com/user-attachments/assets/42581d00-6b16-41e7-b3d6-0c65ffb73e53)
+
+Now publish the new Eventstream so that it can start processing events:
+
+![image](https://github.com/user-attachments/assets/afd6e4cf-133c-478a-9a8e-497e4205a0ef)
+
+Now open VS Code and then select ‘File’ -> ‘Open Folder’ and then navigate to the location of the ‘Send Event Hub Message’ folder downloaded from this repo. On line 8 and 9 change the connection string and event hub name for your event hub. 
+
+![image](https://github.com/user-attachments/assets/7e671c40-002a-4e88-94d2-fa5445623c4f)
+
+The event hub connection string can be found on the page below where we created the SAS key for the Event hub above. For the Event Hub name put in the name of the Event hub (not the name of the Event hub namespace).
+
+![image](https://github.com/user-attachments/assets/d405406b-7749-4aba-8b7b-a3bc80367786)
+
+
+
 
 
 Grafana image
