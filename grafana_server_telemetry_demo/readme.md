@@ -53,6 +53,7 @@ Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Da
 
 Now click on Server_Telemetry_queryset
  
+=========
 Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
 .create table bronzeServerTelemetry(
     datacenter_id: int,
@@ -69,13 +70,15 @@ Copy and paste the code below at the bottom of the code section, then highlight 
     EventEnqueuedUtcTime: datetime 
 )
 
+=============
+
 As shown below:
 
  ![image](https://github.com/user-attachments/assets/098a41fb-ca89-4db6-a786-62b8a8282fc4)
 
 You should see the new table shown above once the script runs.
 
-Now open the Event Stream and create a new connection to the Event Hub
+
 
 Now create a new Event Stream to process the data as shown below:
 
@@ -86,6 +89,8 @@ Now create a new Event Stream to process the data as shown below:
 Connect the source to the Event Hub that we created earlier by selecting ‘Azure Event Hubs’ from the New source section of the Event Stream.
 
 ![image](https://github.com/user-attachments/assets/d83e1faf-cb76-493a-9b42-ea3eb4ffb270)
+
+Add the connection details
 
 ![image](https://github.com/user-attachments/assets/91299630-c32b-4d7f-9d42-1b11bcc1a4e9)
 
