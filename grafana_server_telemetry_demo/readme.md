@@ -35,10 +35,9 @@ Once the event hub namespace is created, create an event hub in it:
 
 Take the defaults for everything else and hit ‘Review and Create’ to create the event hub.
 
-Onece the event hub has been created, create a SAS policy we can use to connect to it and stream data in as shown below. First select 'Add' to add a new policy, then give it a name and check the 'send' and 'listen' check boxes. Make sure you are creating the policy for the Event hub and not the Event hub namespace it belongs to:
+Onece the event hub has been created, create a SAS policy we can use to connect to it and stream data in as shown below. First select 'Add' to add a new policy, then give it a name and check the 'Send' and 'Listen' check boxes and then hit 'Create'. Make sure you are creating the policy for the Event hub and not the Event hub namespace it belongs to:
 
-![image](https://github.com/user-attachments/assets/770add7c-a231-4f50-a4d6-e1a8b4176b64)
-
+![image](https://github.com/user-attachments/assets/738c57ad-f04c-4753-8c57-45240e61e714)
 
 Now back in Fabric, create a new Eventhouse to store the telemetry data that will be streamed in:
 
@@ -47,6 +46,49 @@ Now back in Fabric, create a new Eventhouse to store the telemetry data that wil
 Name the Eventhouse 'Server Telemetry' as shown below:
 
 ![image](https://github.com/user-attachments/assets/0a2a4f69-7648-44b6-8b7e-04bb185acebe)
+
+Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Database to open it.
+
+![image](https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e)
+
+Now click on Server_Telemetry_queryset
+ 
+Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
+.create table bronzeServerTelemetry(
+    datacenter_id: int,
+    server_name: string,
+    cpu_usage: real,
+    memory_usage: real,
+    disk_usage: real,
+    network_in: real,
+    network_out: real,
+    power_usage: real,
+    timestamp: datetime,
+    EventProcessedUtcTime: datetime,
+    PartitionID: int,
+    EventEnqueuedUtcTime: datetime 
+)
+
+As shown below:
+
+ ![image](https://github.com/user-attachments/assets/098a41fb-ca89-4db6-a786-62b8a8282fc4)
+
+You should see the new table shown above once the script runs.
+
+Now open the Event Stream and create a new connection to the Event Hub
+
+Now create a new Event Stream to process the data as shown below:
+
+![image](https://github.com/user-attachments/assets/79de8763-0288-4189-b5ee-4d7f9df07798)
+
+![image](https://github.com/user-attachments/assets/6aed5065-7a93-4678-923e-956a24cc94d5)
+
+Connect the source to the Event Hub that we created earlier by selecting ‘Azure Event Hubs’ from the New source section of the Event Stream.
+
+![image](https://github.com/user-attachments/assets/d83e1faf-cb76-493a-9b42-ea3eb4ffb270)
+
+![image](https://github.com/user-attachments/assets/91299630-c32b-4d7f-9d42-1b11bcc1a4e9)
+
 
 Grafana image
 ![image](https://github.com/user-attachments/assets/2f70f91c-ceb3-402a-bd8e-81f51be62922)
