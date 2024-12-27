@@ -1,6 +1,6 @@
 Fabric Real-time Grafana Demo
 
-This repo will walk you through creating a Fabric EventStream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the items below in the same region as your Power BI Premium or Fabric instance if possible. 
+This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. 
 
 To start, open an Azure portal to create an Azure Managed Grafana instance. Type in Grafana and then select the 'Azure Managed Grafana' service:
 
@@ -33,7 +33,12 @@ Once the event hub namespace is created, create an event hub in it:
 
 ![image](https://github.com/user-attachments/assets/f3a4dfce-5587-4173-898a-4c02bf977836)
 
-Take the defaults for everything else and hit ‘Review and Create’ to create the event hub:
+Take the defaults for everything else and hit ‘Review and Create’ to create the event hub.
+
+Onece the event hub has been created, create a SAS policy we can use to connect to it and stream data in as shown below. First select 'Add' to add a new policy, then give it a name and check the 'send' and 'listen' check boxes. Make sure you are creating the policy for the Event hub and not the Event hub namespace it belongs to:
+
+![image](https://github.com/user-attachments/assets/770add7c-a231-4f50-a4d6-e1a8b4176b64)
+
 
 Now back in Fabric, create a new Eventhouse to store the telemetry data that will be streamed in:
 
@@ -42,6 +47,10 @@ Now back in Fabric, create a new Eventhouse to store the telemetry data that wil
 Name the Eventhouse 'Server Telemetry' as shown below:
 
 ![image](https://github.com/user-attachments/assets/0a2a4f69-7648-44b6-8b7e-04bb185acebe)
+
+Grafana image
+![image](https://github.com/user-attachments/assets/2f70f91c-ceb3-402a-bd8e-81f51be62922)
+
 
 
 
