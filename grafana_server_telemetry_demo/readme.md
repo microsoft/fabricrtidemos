@@ -8,12 +8,13 @@ To start, open an Azure portal to create an Azure Managed Grafana instance. Type
 
 Now select 'Create' to create a new instance:
 
-![image](https://github.com/user-attachments/assets/00a2fd07-3971-46aa-960e-6c30dac23b3b)
+<img src="https://github.com/user-attachments/assets/00a2fd07-3971-46aa-960e-6c30dac23b3b" alt="Image description" style="width: 50%; height: auto;">
 
 Use the image below to fill in the required details for the demo environment. Name your Grafana instance any name you like. Once the fields below are filled in, select to 'Review and Create', then select 'Create':
 
-![image](https://github.com/user-attachments/assets/a383df38-85d4-4d47-b43b-a3695b4fa9ea)
-![image](https://github.com/user-attachments/assets/8be166a3-43a3-42ac-84d7-2bef5dcd5cfd)
+<img src="https://github.com/user-attachments/assets/a383df38-85d4-4d47-b43b-a3695b4fa9ea" alt="Image description" style="width: 50%; height: auto;">
+
+<img src="https://github.com/user-attachments/assets/8be166a3-43a3-42ac-84d7-2bef5dcd5cfd alt="Image description" style="width: 50%; height: auto;">
 
 Once the Managed Grafana instance is created, search for 'Event Hubs' at the top of the Azure portal in the search bar:
 
