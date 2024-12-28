@@ -83,7 +83,7 @@ Now create a new Event Stream to process the data as shown below:
 
 ![image](https://github.com/user-attachments/assets/79de8763-0288-4189-b5ee-4d7f9df07798)
 
-![image](https://github.com/user-attachments/assets/6aed5065-7a93-4678-923e-956a24cc94d5)
+<img src="https://github.com/user-attachments/assets/6aed5065-7a93-4678-923e-956a24cc94d5" alt="Image description" style="width: 50%; height: auto;">
 
 Connect the source to the Event Hub that we created earlier by selecting ‘Use External Source’ from the home screen of the Event Stream. Then select to connect to an 'Azure Event Hub':
 
