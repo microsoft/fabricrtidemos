@@ -208,6 +208,9 @@ Now add another visualization, only this time select server name and disk usage 
 
 ![image](https://github.com/user-attachments/assets/5d8bcde6-2898-4c53-ab52-3f523b98505c)
 
+Select 
+
+![image](https://github.com/user-attachments/assets/0eb3d20c-23d4-498c-93d4-02e16313551a)
 
 
 
