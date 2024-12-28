@@ -53,7 +53,7 @@ Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Da
 
 Now click on Server_Telemetry_queryset
  
-=========
+=========  
 Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
 .create table bronzeServerTelemetry(
     datacenter_id: int,
@@ -70,7 +70,7 @@ Copy and paste the code below at the bottom of the code section, then highlight 
     EventEnqueuedUtcTime: datetime 
 )
 
-=============
+=============  
 
 As shown below:
 
