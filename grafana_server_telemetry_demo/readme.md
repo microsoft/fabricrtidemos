@@ -31,7 +31,7 @@ Once the event hub namespace is created, create an event hub in it:
 
 ![image](https://github.com/user-attachments/assets/9c271028-8f21-44c9-8f3d-c850c5762820)
 
-![image](https://github.com/user-attachments/assets/f3a4dfce-5587-4173-898a-4c02bf977836)
+<img src="https://github.com/user-attachments/assets/f3a4dfce-5587-4173-898a-4c02bf977836" alt="Image description" style="width: 50%; height: auto;">
 
 Take the defaults for everything else and hit ‘Review and Create’ to create the event hub.
 
