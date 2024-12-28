@@ -35,7 +35,7 @@ Once the event hub namespace is created, create an event hub in it:
 
 Take the defaults for everything else and hit ‘Review and Create’ to create the event hub.
 
-Onece the event hub has been created, create a SAS policy we can use to connect to it and stream data in as shown below. First select 'Add' to add a new policy, then give it a name and check the 'Send' and 'Listen' check boxes and then hit 'Create'. Make sure you are creating the policy for the Event hub and not the Event hub namespace it belongs to:
+Once the event hub has been created, create a SAS policy we can use to connect to it and stream data in as shown below. First select 'Add' to add a new policy, then give it a name and check the 'Send' and 'Listen' check boxes and then hit 'Create'. Make sure you are creating the policy for the Event hub and not the Event hub namespace it belongs to:
 
 ![image](https://github.com/user-attachments/assets/738c57ad-f04c-4753-8c57-45240e61e714)
 
