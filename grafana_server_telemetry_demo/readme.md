@@ -202,6 +202,11 @@ Do the same thing as last time, only this time you can use memory_usage as the m
 
 ![image](https://github.com/user-attachments/assets/6366dbf4-5784-4a20-9253-7d752f6bb339)
 
+Save and apply the visualization, you should see two visualizations on the dashboard now, one for memory usage and one for cpu usage.
+
+Now add another visualization, only this time select server name and disk usage at the two fields, then select 'Open visualization suggestions'. Select the second gauge option as shown below:
+
+![image](https://github.com/user-attachments/assets/5d8bcde6-2898-4c53-ab52-3f523b98505c)
 
 
 
