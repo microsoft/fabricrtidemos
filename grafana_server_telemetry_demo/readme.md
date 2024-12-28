@@ -208,9 +208,32 @@ Now add another visualization, only this time select server name and disk usage 
 
 ![image](https://github.com/user-attachments/assets/5d8bcde6-2898-4c53-ab52-3f523b98505c)
 
-Select 
+Now add a filter to the visualization to just show server 101, and change the title as well as shown below:
 
-![image](https://github.com/user-attachments/assets/0eb3d20c-23d4-498c-93d4-02e16313551a)
+![image](https://github.com/user-attachments/assets/2e94d955-b591-49bd-9b86-bbb5faba4389)
+
+Hit apply and the dashboard should look something like this:
+
+![image](https://github.com/user-attachments/assets/7736b7b3-9173-4c3a-a5df-9e41f55903c1)
+
+Now duplicate the disk usage visualization as shown below so we can create similar details for the other servers:
+
+![image](https://github.com/user-attachments/assets/a2a4e97c-5418-4a5f-b1ac-6223756c1672)
+
+After duplicating it, select the three dots in the top right corner to edit the visualization.
+
+![image](https://github.com/user-attachments/assets/1133dc04-50de-4660-ae1d-e822a111131a)
+
+Change the filter and title for the other servers and hit apply. Your dashboard should look something like this:
+
+![image](https://github.com/user-attachments/assets/9f059717-0471-4f56-9c50-ec7a330649b2)
+
+Note you can change how quickly the dashboard refreshes by selecting the refresh icon on the top right as shown below:
+
+![image](https://github.com/user-attachments/assets/c9e46f57-9dfe-4e70-940f-8e8101ea72d7)
+
+
+
 
 
 
