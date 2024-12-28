@@ -179,15 +179,7 @@ Now in the query builder, select the ‘server_name, cpu_usage, and timestamp fi
 
 ![image](https://github.com/user-attachments/assets/82d90639-6d36-411c-bbce-cf696bc598a0)
 
-
-
-
-
-
-
-
-
-Grafana image
+Also select the options below to ensure the data is displayed correctly:
 ![image](https://github.com/user-attachments/assets/2f70f91c-ceb3-402a-bd8e-81f51be62922)
 
 
