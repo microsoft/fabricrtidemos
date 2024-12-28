@@ -1,6 +1,6 @@
 <p style="text-align: center;"><strong>Fabric Real-time Grafana Demo</strong></p>
 
-This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. We will use VS Code with a Python script to generate the data, so you will need VS Code and Python installed on your client machine. 
+This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. This demo will use VS Code with a Python script to generate the data, so you will need VS Code and Python installed on your client machine. 
 
 To start, open an Azure portal to create an Azure Managed Grafana instance. Type in Grafana and then select the 'Azure Managed Grafana' service:
 
