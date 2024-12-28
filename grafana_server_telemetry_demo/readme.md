@@ -134,7 +134,7 @@ Select to ‘Configure a new data source’
 
 Search for ‘data explorer’, then select Azure Data Explorer datasource. This is the same connector that will work with the Fabric KQL databases. On the configuration screen that pops up next, change the name to something like ‘Fabric-Server-Telemetry’ to easily identify the source. 
 
-![image](https://github.com/user-attachments/assets/60682681-b233-4a0a-8dc0-d86e53260b36
+![image](https://github.com/user-attachments/assets/60682681-b233-4a0a-8dc0-d86e53260b36).
 
 Now back in Fabric in the KQL database, copy the ingestion URI as shown below. 
 
