@@ -45,12 +45,11 @@ Now back in Fabric, create a new Eventhouse to store the telemetry data that wil
 
 Name the Eventhouse 'Server Telemetry' as shown below:
 
-![image](https://github.com/user-attachments/assets/0a2a4f69-7648-44b6-8b7e-04bb185acebe)
+<img src="https://github.com/user-attachments/assets/0a2a4f69-7648-44b6-8b7e-04bb185acebe" alt="Image description" style="width: 50%; height: auto;">
 
 Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Database to open it.
 
 <img src="https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e" alt="Image description" style="width: 50%; height: auto;">
-![image](https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e)
 
 Now click on Server_Telemetry_queryset. Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
  
