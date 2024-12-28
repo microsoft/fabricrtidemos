@@ -49,11 +49,12 @@ Name the Eventhouse 'Server Telemetry' as shown below:
 
 Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Database to open it.
 
+<img src="https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e" alt="Image description" width="500" height="300">
 ![image](https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e)
 
 Now click on Server_Telemetry_queryset. Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
  
-=========  
+=============    
 .create table bronzeServerTelemetry(
     datacenter_id: int,
     server_name: string,
