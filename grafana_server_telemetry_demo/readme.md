@@ -89,7 +89,7 @@ Connect the source to the Event Hub that we created earlier by selecting ‘Use 
 
 ![image](https://github.com/user-attachments/assets/2ed5294c-1bfc-4396-a2f4-49e4ecccf9cd)
 
-Select to add a new connection and then add the connection details for the Event Hub we created earlier. For the Shared Access Key Name and Key, reference the values we created above for the Event Hub SAS key.
+Select to add a new connection and then add the connection details for the Event Hub we created earlier. For the Shared Access Key Name and Key, reference the key values we created above for the Event Hub SAS Policy.
 
 ![image](https://github.com/user-attachments/assets/91299630-c32b-4d7f-9d42-1b11bcc1a4e9)
 
