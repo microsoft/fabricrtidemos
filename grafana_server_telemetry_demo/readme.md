@@ -136,7 +136,7 @@ Search for ‘data explorer’, then select Azure Data Explorer datasource. This
 
 ![image](https://github.com/user-attachments/assets/60682681-b233-4a0a-8dc0-d86e53260b36).
 
-Now back in Fabric in the KQL database, copy the ingestion URI as shown below. 
+Now back in Fabric in the KQL database, copy the Query URI as shown below. 
 
 ![image](https://github.com/user-attachments/assets/e4c344dc-5863-4227-80fa-777cac10f246)
 
