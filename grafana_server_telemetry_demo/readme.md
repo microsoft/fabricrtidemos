@@ -124,6 +124,10 @@ The event hub connection string can be found on the page below where we created 
 
 Once that is complete, run the script to start sending messages to the event hub that can be consumed by the Event Stream. The Event Stream will send the messages to the Server_Telemetry KQL database. Note you may need to do a pip install of the azure-eventhub library in your Python environment for the script to work. 
 
+Note that for your Fabric Eventstream to process the messages, the connections to the Event hub and KQL database need to show as active as shown in the diagram below:
+
+![image](https://github.com/user-attachments/assets/a0120d84-5ffd-484b-9d23-3e4c5f32e4ce)
+
 Now go back to the Azure Managed Grafana instance in Azure created at the beginning. Click on the Endpoint to launch the Grafana interface. Login with your id:
 
 ![image](https://github.com/user-attachments/assets/289cdb8f-ef74-411e-a92f-006b5aa0ee4a)
@@ -181,6 +185,25 @@ Now in the query builder, select the ‘server_name, cpu_usage, and timestamp fi
 
 Also select the options below to ensure the data is displayed correctly:
 ![image](https://github.com/user-attachments/assets/2f70f91c-ceb3-402a-bd8e-81f51be62922)
+
+Note to ensure you are seeing the data, you may need to adjust the default time window to go further back as shown below:
+
+![image](https://github.com/user-attachments/assets/2150423d-95a9-41cc-ad59-d2241dab3352)
+
+If everything is working correctly, you should see something like the image below:
+
+![image](https://github.com/user-attachments/assets/6336de3f-f9f8-426d-831e-81ea3684dbf8)
+
+Hit 'Apply' in the top right corner to save the visualization then select 'Add' to add a new visualization. 
+
+![image](https://github.com/user-attachments/assets/e61810f5-00cd-407a-9435-fe57aa8715aa)
+
+Do the same thing as last time, only this time you can use memory_usage as the measure instead of cpu_usage. Make sure to format it as a time series as well and also add a title as shown:
+
+![image](https://github.com/user-attachments/assets/6366dbf4-5784-4a20-9253-7d752f6bb339)
+
+
+
 
 
 
