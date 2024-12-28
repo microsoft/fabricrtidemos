@@ -117,7 +117,7 @@ Now open VS Code and then select ‘File’ -> ‘Open Folder’ and then naviga
 
 ![image](https://github.com/user-attachments/assets/7e671c40-002a-4e88-94d2-fa5445623c4f)
 
-The event hub connection string can be found on the page below where we created the SAS key for the Event hub above. For the Event Hub name put in the name of the Event hub (not the name of the Event hub namespace).
+The event hub connection string can be found on the page below where we created the SAS key for the Event hub above as shown in the image below. For the Event Hub name put in the name of the Event hub (not the name of the Event hub namespace).
 
 ![image](https://github.com/user-attachments/assets/d405406b-7749-4aba-8b7b-a3bc80367786)
 
