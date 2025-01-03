@@ -154,11 +154,11 @@ Now back in Fabric in the KQL database, copy the Query URI as shown below.
 
 ![image](https://github.com/user-attachments/assets/e4c344dc-5863-4227-80fa-777cac10f246)
 
-Now paste it into the Default cluster URL. Set the authentication to use ‘Current User’ for this demo.
+Now paste it into the Default cluster URL. Set the authentication to use ‘Current User’ for this demo or optionally use the Managed Idenitity.
 
 ![image](https://github.com/user-attachments/assets/85f4374c-4c64-4d48-a8b4-e6c7838e3ba0)
 
-Before saving the new source and testing it, first copy the name of your Azure Managed Grafana instance, which is the name of the managed identity, and add it as a contributor on your Fabric workspace. 
+If you select the Managed Identity for authentication, then before saving the new source and testing it, first copy the name of your Azure Managed Grafana instance, which is the name of the managed identity, and add it as a contributor on your Fabric workspace. If you selected the 'Current User' authentication, then you will already have access to the Fabric workspaces and services.
 
 ![image](https://github.com/user-attachments/assets/9442d158-2c53-4c1a-abe5-866618303396)
 
