@@ -1,6 +1,6 @@
 <p style="text-align: center;"><strong>Fabric Real-time Grafana Demo</strong></p>
 
-This repo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. This demo will use VS Code with a Python script to generate the server telemetry data, so you will need VS Code and Python installed on your client machine. 
+This demo will walk you through creating a Fabric Eventstream and Eventhouse and then streaming synthetic server telemetry data to it. We will then create an Azure Managed Grafana dashboard to visualize the data. This demo assumes you have a regular or trial Fabric or Power BI Premium instance you can use. Create the Grafana and Event Hubs items below in the same region as your Power BI Premium or Fabric instance if possible. This demo will use VS Code with a Python script to generate the server telemetry data, so you will need VS Code and Python installed on your client machine. 
 
 To start, open an Azure portal to create an Azure Managed Grafana instance. Type in Grafana and then select the 'Azure Managed Grafana' service:
 
@@ -44,13 +44,14 @@ Now back in Fabric, create a new Eventhouse to store the telemetry data that wil
 
 ![image](https://github.com/user-attachments/assets/b6e8fcd2-7a89-44e2-92a8-f1a1790cadeb)
 
-Name the Eventhouse 'Server Telemetry' as shown below:
+Name the Eventhouse 'Server Telemetry' as shown below then select 'create':
 
 <img src="https://github.com/user-attachments/assets/0a2a4f69-7648-44b6-8b7e-04bb185acebe" alt="Image description" style="width: 50%; height: auto;">
 
 Next open the Server Telemetry Eventhouse and select the Server Telemetry KQL Database to open it.
 
 <img src="https://github.com/user-attachments/assets/f584f675-98ce-4900-8596-10f51e171c5e" alt="Image description" style="width: 50%; height: auto;">
+
 
 Now click on Server_Telemetry_queryset. Copy and paste the code below at the bottom of the code section, then highlight the code and hit the ‘Run’ button to create the new table.
  
@@ -86,9 +87,13 @@ Now create a new Event Stream to process the data as shown below:
 
 <img src="https://github.com/user-attachments/assets/6aed5065-7a93-4678-923e-956a24cc94d5" alt="Image description" style="width: 50%; height: auto;">
 
-Connect the source to the Event Hub that we created earlier by selecting ‘Use External Source’ from the home screen of the Event Stream. Then select to connect to an 'Azure Event Hub':
+
+Now connect the source to the Event Hub that we created earlier by selecting ‘Use External Source’ from the home screen of the Event Stream. Then select to connect to an 'Azure Event Hub':
 
 ![image](https://github.com/user-attachments/assets/2ed5294c-1bfc-4396-a2f4-49e4ecccf9cd)
+
+![image](https://github.com/user-attachments/assets/ae00b656-144e-4fa6-8bf3-c2107209afc8)
+
 
 Select to add a new connection and then add the connection details for the Event Hub we created earlier. For the Shared Access Key Name and Key, reference the key values we created above for the Event Hub SAS Policy.
 
@@ -167,7 +172,7 @@ Select the Fabric-Server-Telemetry connection:
 
 ![image](https://github.com/user-attachments/assets/09f98cd9-3d7d-4daf-afbc-c70db2b54d96)
 
-Note there is a bug in Grafana where sometimes it doesn’t show the graphical query builder correctly as shown below:
+In the new dashboard builder, create a new query towards the bottom to pull in data from Fabric. Note there is a bug in Grafana where sometimes it doesn’t show the graphical query builder the first time correctly as shown below:
 
 ![image](https://github.com/user-attachments/assets/08658088-51ac-4e2d-85fd-3f81eba3d5fc)
 
