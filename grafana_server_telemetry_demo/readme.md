@@ -21,7 +21,8 @@ Once the Managed Grafana instance is created, search for 'Event Hubs' at the top
 <br>
 <br>
 <img src="https://github.com/user-attachments/assets/abc4acd5-6fec-4186-9d76-a3c59dcb4e90" alt="Image description" style="width: 50%; height: auto;">
-
+<br>
+<br>
 Now select 'Create' to create an Azure Event Hub namespace:
 
 <img src="https://github.com/user-attachments/assets/ff79ced3-1000-410e-84e9-c6f3ac6edc55" alt="Image description" style="width: 75%; height: auto;">
