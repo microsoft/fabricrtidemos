@@ -124,7 +124,7 @@ Now publish the new Eventstream so that it can start processing events:
 
 ![image](https://github.com/user-attachments/assets/afd6e4cf-133c-478a-9a8e-497e4205a0ef)
 
-Now open VS Code and then select ‘File’ -> ‘Open Folder’ and then navigate to the location of the ‘Send Event Hub Message’ folder downloaded from this repo. On line 8 and 9 change the connection string and event hub name for your event hub. 
+Now open VS Code and then select ‘File’ -> ‘Open Folder’ and then navigate to the location of the ‘send_telemetry.py’ file downloaded from the python_script folder in this repo. On line 8 and 9 change the connection string and event hub name for your event hub. 
 
 ![image](https://github.com/user-attachments/assets/7e671c40-002a-4e88-94d2-fa5445623c4f)
 
