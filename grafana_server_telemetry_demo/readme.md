@@ -16,7 +16,9 @@ Use the image below to fill in the required details for the demo environment. Na
 
 <img src="https://github.com/user-attachments/assets/8be166a3-43a3-42ac-84d7-2bef5dcd5cfd" alt="Image description" style="width: 50%; height: auto;">
 <br>
+<br>
 Once the Managed Grafana instance is created, search for 'Event Hubs' at the top of the Azure portal in the search bar:
+<br>
 <br>
 <img src="https://github.com/user-attachments/assets/abc4acd5-6fec-4186-9d76-a3c59dcb4e90" alt="Image description" style="width: 50%; height: auto;">
 
